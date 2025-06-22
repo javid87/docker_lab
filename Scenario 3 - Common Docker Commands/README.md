@@ -24,10 +24,10 @@ OR old one
 In this output, you'll see the `hello-world` and `nginx` containers you ran previously.
     Other key information includes:
 
-    * Container ID: A unique identifier assigned to each container, used for management.
-    * Command: The default command executed when the container starts. You can override this by specifying a command at the end of the `docker run` command.
-    * Status: Indicates the container's state, such as `Exited (0)` for both containers here. An exit code of `0` means the command executed successfully; other exit codes may indicate issues. If the container is running, you'll see `Running`. For more status details, refer to the `docker container ls` command reference page.
-    * Name: The container's name, which defaults to a random two-word phrase. To specify a name, use the `--name` argument, such as: `docker run --name my-hello-world-container hello-world`.
+* **Container ID:** A unique identifier assigned to each container, used for management.
+* **Command:** The default command executed when the container starts. You can override this by specifying a command at the end of the `docker run` command.
+* **Status:** Indicates the container's state, such as `Exited (0)` for both containers here. An exit code of `0` means the command executed successfully; other exit codes may indicate issues. If the container is running, you'll see `Running`. For more status details, refer to the `docker container ls` command reference page.
+* **Name:** The container's name, which defaults to a random two-word phrase. To specify a name, use the `--name` argument, such as: `docker run --name my-hello-world-container hello-world`.
 
 ### `docker container [start|restart|stop|kill]`
 These commands manage containers that have already been created:
