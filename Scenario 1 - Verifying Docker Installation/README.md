@@ -59,11 +59,11 @@ With Docker installed and running, you can now run your first Docker image. You'
 
     ![Virtual Machine vs. Container Environment](https://i.postimg.cc/xTv3yvnd/Screenshot-2025-06-22-224416.png)
 
-Congratulations, you have run your first Docker container!
+## Congratulations, you have run your first Docker container!
 
-    When you execute the `docker run` command, Docker first checks if the specified image is already available on your local machine. If the image is found, Docker will use it to create the container. However, if the image is not present locally, Docker automatically fetches it from a container registry. In this lab, instead of pulling the image from the default Docker Hub, Docker is downloading a copy of the `hello-world` image from a GitHub Container Registry. You can identify this by the registry prefix `ghcr.io/sweickge/` in the image reference.
+When you execute the `docker run` command, Docker first checks if the specified image is already available on your local machine. If the image is found, Docker will use it to create the container. However, if the image is not present locally, Docker automatically fetches it from a container registry. In this lab, instead of pulling the image from the default Docker Hub, Docker is downloading a copy of the `hello-world` image from a GitHub Container Registry. You can identify this by the registry prefix `ghcr.io/sweickge/` in the image reference.
 
-    To ensure Docker always checks for the latest version of the image before creating a container, add the `--pull=always` option to your `docker run` command.
+To ensure Docker always checks for the latest version of the image before creating a container, add the `--pull=always` option to your `docker run` command.
 
 2.  Run this command in your Terminal window to have Docker check for a new version of the `hello-world` image before creating a container:
     ```bash
