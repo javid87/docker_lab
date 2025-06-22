@@ -62,10 +62,7 @@ Here are definitions of some common Docker terms you will see in this lab:
 
 ---
 
-## 🚀 Getting Started
-Please see the **Getting Started** page to get started with the lab.
-
-*(Note: You will need to create this page or section in your repository.)*
+## 🚀 Letəs start  🚀
 
 ---
 
