@@ -62,9 +62,9 @@ Here are definitions of some common Docker terms you will see in this lab:
 
 ---
 
-## 🚀 Letəs start  🚀
+## 🚀 Let's start  Getdiyeeee 🚀
 
 ---
 
 ### Disclaimer
-> This lab is to familarize participants with the basics of Docker. For any design related questions please contact your representative at Javid Alizada
+> This lab is to familarize participants with the basics of Docker. For any design related questions please contact your representative at **Javid Alizada**
