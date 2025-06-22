@@ -7,7 +7,7 @@ Now that you have run your first container and explored Docker Hub, you will now
 ## Docker Container Commands
 These commands are used to manage containers on the host.
 
-### `docker container ls`
+## `docker container ls`
 This command displays the containers currently running on the host. You might also come across the `docker ps` command, which provides the same functionality. The `docker container <command>` structure was introduced later to standardize the Docker CLI syntax. If you're familiar with the Linux `ls` command, which lists directory contents, you'll notice this command serves a similar purpose, but specifically for Docker containers.
 
 1.  Run `docker container ls` in your Terminal:
@@ -18,11 +18,12 @@ OR old one
     ```bash
     docker ps
     ```
+    
     ![Virtual Machine vs. Container Environment](https://i.postimg.cc/fWv5KZyb/Screenshot-2025-06-22-231943.png)
 
 In this output, you'll see the `hello-world` and `nginx` containers you ran previously.
     Other key information includes:
-    
+
     * **Container ID:** A unique identifier assigned to each container, used for management.
     * **Command:** The default command executed when the container starts. You can override this by specifying a command at the end of the `docker run` command.
     * **Status:** Indicates the container's state, such as `Exited (0)` for both containers here. An exit code of `0` means the command executed successfully; other exit codes may indicate issues. If the container is running, you'll see `Running`. For more status details, refer to the `docker container ls` command reference page.
