@@ -18,8 +18,8 @@ OR old one
     ```bash
     docker ps
     ```
-    
-    ![Virtual Machine vs. Container Environment](https://i.postimg.cc/fWv5KZyb/Screenshot-2025-06-22-231943.png)
+
+![Virtual Machine vs. Container Environment](https://i.postimg.cc/fWv5KZyb/Screenshot-2025-06-22-231943.png)
 
 In this output, you'll see the `hello-world` and `nginx` containers you ran previously.
     Other key information includes:
