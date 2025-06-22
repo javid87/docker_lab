@@ -24,6 +24,7 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+container-vs-vm-drawing.png
 MANIFEST
 
 # PyInstaller
