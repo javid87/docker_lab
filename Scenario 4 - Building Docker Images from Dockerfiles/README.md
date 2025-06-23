@@ -22,11 +22,11 @@ First, you will confirm that the existing web application functions correctly ou
 
 The home directory for the <User_Name> user will appear. If it doesn’t, click the **Home** button on the left side. Then, double-click the `workspace` folder, followed by the `flask_project` folder, and click the **Open** button in the top-right corner.
 
-    ![Navigating to and opening the project folder](https://i.postimg.cc/BbWL5BMX/Screenshot-2025-06-23-164717.png)
+![Navigating to and opening the project folder](https://i.postimg.cc/BbWL5BMX/Screenshot-2025-06-23-164717.png)
 
-    After clicking **Open**, the `flask_project` folder will appear on the left-hand side. It contains two subfolders, a README file, a `requirements.txt` file, and a `Dockerfile` which you will modify later in this scenario. If you do not see the folder contents appear, click on the **Explorer** icon in the sidebar, which is the icon with the 2 pages on top of each other.
+After clicking **Open**, the `flask_project` folder will appear on the left-hand side. It contains two subfolders, a README file, a `requirements.txt` file, and a `Dockerfile` which you will modify later in this scenario. If you do not see the folder contents appear, click on the **Explorer** icon in the sidebar, which is the icon with the 2 pages on top of each other.
 
-    ![Project folder open in Visual Studio Code](https://i.postimg.cc/yYsW-Vd54/scenario-4-visual-studio-with-project-open.png)
+![Project folder open in Visual Studio Code](https://i.postimg.cc/yYsW-Vd54/scenario-4-visual-studio-with-project-open.png)
 
 3.  The Flask website is located in the `website` folder. Click the `>` next to the `website` folder to expand its contents. The Flask application is in the `flask_website.py` file. Open this file.
 
@@ -55,3 +55,38 @@ The home directory for the <User_Name> user will appear. If it doesn’t, click 
 ### Running the Flask Web Application
 
 1.  The other folder inside the `flask_project` folder, `flaskvenv`, is a Python 3.10 virtual environment with the application's required dependencies already installed. You will use this virtual environment to test the web application. In Visual Studio Code, click the **Terminal** button in the top toolbar, then select **New Terminal** to open a new Ubuntu terminal within Visual Studio Code.
+
+When the Terminal opens, you should be inside of the flask_project directory:
+
+![VS terminal](https://i.postimg.cc/9XdZtzqz/Screenshot-2025-06-23-173444.png)
+
+If you're not already in this directory, use the following command in your Terminal to navigate to it:
+
+```bash
+cd Scenario\ 4\ -\ Building\ Docker\ Images\ from\ Dockerfiles/flask_project
+```
+2. Now activate the Python 3.10 virtualenv named flaskvenv with the following command:
+
+```bash
+source flaskvenv/bin/activate
+```
+After you enter this command you should now see (flaskenv) displayed to the left of the username in your Terminal. This indicates that you are currently running the Python virtual environment.
+
+3. Inside of the Terminal change to the website directory
+```bash
+cd website
+```
+
+4. Run the web application using the gunicorn command and use the -c command line argument and specify the gunicorn configuration file
+  ```bash
+  gunicorn -c gunicorn_config.py
+  ```
+  P.S: if you use windows use: 
+  ```bash
+  waitress-serve --host 127.0.0.1 --port 8000 flask_website:app
+  ```
+
+  After entering this command you will see output appear in your Terminal. Look for the following output at the bottom, which indicates the web application is running on port 8000:
+5. In the workstation, open a web browser and go to http://localhost:8000. You should see the following page, confirming that the website is working correctly:
+
+![rick](https://i.postimg.cc/9MGb7bhQ/Screenshot-2025-06-23-174522.png)
