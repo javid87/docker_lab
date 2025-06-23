@@ -174,7 +174,7 @@ docker image tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
     ```bash
     docker image ls
     ```
-    *[Здесь будет скриншот со списком образов, включая новый тег]*
+    ![docker tag](https://i.postimg.cc/7hnmzhwJ/Screenshot-2025-06-23-151712.png)
 
     You'll notice both the `nginx:1.26.3` image and the `prod_nginx:1.0` image have the same image ID. This is expected because you created a new tag for the nginx image without altering its content. When two images share the same image ID, they are identical in content, and Docker manages them efficiently by storing only one copy while allowing you to reference them through different tags and repository names.
 
@@ -185,7 +185,7 @@ This command displays detailed information about a specific image.
     ```bash
     docker image inspect ghcr.io/sweickge/nginx:1.26.3
     ```
-    *[Здесь будет скриншот с подробной информацией об образе]*
+    ![docker image ispect](https://i.postimg.cc/CLv4pW10/Screenshot-2025-06-23-152317.png)
 
 ### `docker image rm` and `docker image prune`
 These commands remove images from your host to free up space, helping prevent storage issues with periodic cleanups:
