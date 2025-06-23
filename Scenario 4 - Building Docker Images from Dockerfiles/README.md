@@ -90,3 +90,15 @@ cd website
 5. In the workstation, open a web browser and go to http://localhost:8000. You should see the following page, confirming that the website is working correctly:
 
 ![rick](https://i.postimg.cc/9MGb7bhQ/Screenshot-2025-06-23-174522.png)
+
+6. Shutdown the web server, by entering Ctrl-C in the Terminal.
+
+### Creating the Flask Application Dockerfile
+
+Now that you’ve confirmed the application is working correctly, the next step is to create a Dockerfile for the Flask application. An empty Dockerfile with comments has been created for you and is placed in the flask_project directory, outside of the website folder. This separation keeps the Flask application files organized and makes it easier to copy the entire website folder when building the Docker image.
+
+When creating a Dockerfile, it's a good practice to place instructions for layers that change less frequently earlier in the file. This takes advantage of Docker's caching mechanism, which reuses unchanged layers to speed up subsequent builds. For example, specifying the base image and installing dependencies should come before copying application code. This way, changes to your code won’t invalidate the earlier cached layers, resulting in faster rebuilds.
+
+If you'd like to explore the instructions used in a Dockerfile in more detail, refer to the Dockerfile reference page while working through this section of the scenario.
+
+1. In Visual Studio Code, open the Dockerfile in the flask_project folder and inspect it. You may notice that the filename and project appear red. This is normal behavior, as Visual Studio Code flags the file because it currently has no instructions written to build the image. Once you add valid instructions to the Dockerfile, the red highlight will disappear.
