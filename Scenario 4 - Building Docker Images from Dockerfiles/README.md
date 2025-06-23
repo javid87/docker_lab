@@ -16,6 +16,6 @@ First, you will confirm that the existing web application functions correctly ou
 
     ![Visual Studio Code Icon](https://i.postimg.cc/X7GdCXLZ/Screenshot-2025-06-23-164325.png)
 
-2.  The location of the Flask application you will be turning into a Docker container is located in the following folder: `/home/ciscolive/workspace/flask_project`. After Visual Studio Code opens, click on **File -> Open Folder**.
+2.  The location of the Flask application you will be turning into a Docker container is located in the following folder: `/home/<your_usernae/<your_path>/flask_project`. After Visual Studio Code opens, click on **File -> Open Folder**.
 
     ![Visual Studio Code - Open Folder menu](https://i.postimg.cc/Ss1YXpz7/scenario-4-visual-studio-open-folder.png)
