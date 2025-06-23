@@ -1,0 +1,4 @@
+# Used to write the web application
+Flask==3.1.0
+# Used to run the webserver
+gunicorn==23.0.0
